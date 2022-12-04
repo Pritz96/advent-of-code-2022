@@ -37,6 +37,10 @@ section_overlapping_within_another <- function(first_elf_range, second_elf_range
   return(FALSE)
 }
 
+# first_elf_range contains the range for the first elf
+# second_elf_range contains the range for the second elf
+# section_contained is a logical column, TRUE if one range is fully contained within the other, FALSE otherwise
+# section overlapping is a logical column, TRUE if one range overlaps the other, FALSE, otherwise
 puzzle_input <- puzzle_input %>% 
   dplyr::mutate(
     first_elf_range = sapply(puzzle_input$first_elf, section_to_range),
