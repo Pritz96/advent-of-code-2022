@@ -12,8 +12,8 @@ puzzle_input$second_elf <- as.character(puzzle_input$second_elf)
 # Function that takes in a section e.g. "94-97" and returns a vector range [94:97]
 section_to_range <- function(section){
   section_split <- unlist(strsplit(section, "-"))
-  min<- section_split[1]
-  max<- section_split[2]
+  min <- section_split[1]
+  max <- section_split[2]
   return(min:max)
 }
 
