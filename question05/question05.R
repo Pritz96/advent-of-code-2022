@@ -5,11 +5,7 @@ library(dplyr)
 puzzle_input <- readLines("puzzle_input.txt")
 
 # Find empty line within puzzle to distinguish crate stack data from procedure data
-remove_spaces <- function(line) {
-  return(gsub(" ", "", line))
-}
-puzzle_input_removed_spaces <- lapply(puzzle_input, remove_spaces)
-index_of_empty_line <- match("", puzzle_input_removed_spaces)
+index_of_empty_line <- which(puzzle_input == "")
 crate_stacks <- strsplit(puzzle_input[1:(index_of_empty_line - 2)], "\n")
 procedures <- strsplit(puzzle_input[(index_of_empty_line + 1):length(puzzle_input)], "\n")
 
