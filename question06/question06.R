@@ -23,11 +23,11 @@ which_chunks_are_unique <- function(chunked_vector){
 datastream_buffer <- readLines("puzzle_input.txt")
 split_datastream <- unlist(strsplit(datastream_buffer, ""))
 
-# For part 1, chunk the datastream buffer vector into chunks of 4 and find the chunk where every item in the chunk is unique
+# For part 1, chunk the datastream buffer vector into chunks of 4 and find the index of the chunk where every item in the chunk is unique
 chunked_datastream_part1 <- chunk_vector_into_groups(split_datastream, 4)
 index_of_first_unique_chunk_part1 <- which_chunks_are_unique(chunked_datastream_part1)
 
-# For part 1, chunk the datastream buffer vector into chunks of 14 and find the chunk where every item in the chunk is unique
+# For part 2, chunk the datastream buffer vector into chunks of 14 and find the index of the chunk where every item in the chunk is unique
 chunked_datastream_part2 <- chunk_vector_into_groups(split_datastream, 14)
 index_of_first_unique_chunk_part2 <- which_chunks_are_unique(chunked_datastream_part2)
 
