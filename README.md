@@ -10,7 +10,7 @@ My solutions to Advent of Code 2022
 - Then simply run the script and the solution gets printed to the console
 
 ### Python3 Solutions
-- To run the solution for question `<xx>, ``cd` into the directory of `question<xx>` then run `python3 question<xx>.py`
+- To run the solution for question `<xx>` , `cd` into the directory of `question<xx>` then run `python3 question<xx>.py`
 
 ## Summary of my progress
 | Question      | Stars | Language |
