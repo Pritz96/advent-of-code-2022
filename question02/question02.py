@@ -38,12 +38,13 @@ with open('puzzle_input.txt') as puzzle_input:
         seperated_moves = line.split()
         opponent_move = string_to_integer_move(seperated_moves[0])
         my_move = string_to_integer_move(seperated_moves[1])
-        my_total_score_part1 = my_total_score_part1 + my_score(opponent_move, my_move)
+        my_total_score_part1 = my_total_score_part1 + \
+            my_score(opponent_move, my_move)
     print("My total score is {} (part 1)".format(my_total_score_part1))
 
 # Part 2
 
-# Loop through each line, extract the opponents move and game outcome. 
+# Loop through each line, extract the opponents move and game outcome.
 # Then calculate what move I should play according to the outcome then total up the score for each game
 with open('puzzle_input.txt') as puzzle_input:
     my_total_score_part2 = 0
@@ -52,5 +53,6 @@ with open('puzzle_input.txt') as puzzle_input:
         opponent_move = string_to_integer_move(seperated_moves[0])
         outcome = seperated_moves[1]
         my_move = what_move_do_i_play(opponent_move, outcome)
-        my_total_score_part2 = my_total_score_part2 + my_score(opponent_move, my_move)
+        my_total_score_part2 = my_total_score_part2 + \
+            my_score(opponent_move, my_move)
     print("My total score is {} (part 2)".format(my_total_score_part2))
