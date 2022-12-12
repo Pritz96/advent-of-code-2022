@@ -24,4 +24,5 @@ My solutions to Advent of Code 2022
 | 7             | 2     | R        |
 | 8             | 2     | R        |
 | 9             | 2     | Python3  |
+| 10            | 2     | Python3  |
 
